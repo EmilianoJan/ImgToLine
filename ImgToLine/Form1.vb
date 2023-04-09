@@ -223,4 +223,14 @@ Public Class Form1
 	Private Sub ToolStripButton3_Click_1(sender As Object, e As EventArgs) Handles ToolStripButton3.Click
 		CalculoAutomatico()
 	End Sub
+
+	Private Sub CalcularSinModificarPivotesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CalcularSinModificarPivotesToolStripMenuItem.Click
+		Dim ima As New Bitmap(PictureBox1.Image)
+		Dim obje As New ImageSingle(ima)
+		Dim sali As ConvertirLineas.Resultados
+		sali = calculo.Convertir(obje, confi)
+		PropertyGrid2.SelectedObject = sali
+		PictureBox2.Image = sali.Imagen.GetImg
+		PictureBox3.Image = calculo.GenerarLineas(sali)
+	End Sub
 End Class

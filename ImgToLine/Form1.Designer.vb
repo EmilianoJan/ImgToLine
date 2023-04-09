@@ -47,6 +47,7 @@ Partial Class Form1
 		Me.AgregarPuntosEnContornoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.AgregarPuntosRandomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
+		Me.CalcularSinModificarPivotesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SplitContainer1.Panel1.SuspendLayout()
 		Me.SplitContainer1.Panel2.SuspendLayout()
@@ -202,7 +203,7 @@ Partial Class Form1
 		'
 		'ToolStripButton2
 		'
-		Me.ToolStripButton2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CalcularDeImagenInicialToolStripMenuItem, Me.CalcularDeBordesToolStripMenuItem, Me.AutomaticoToolStripMenuItem})
+		Me.ToolStripButton2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CalcularDeImagenInicialToolStripMenuItem, Me.CalcularDeBordesToolStripMenuItem, Me.AutomaticoToolStripMenuItem, Me.CalcularSinModificarPivotesToolStripMenuItem})
 		Me.ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), System.Drawing.Image)
 		Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
 		Me.ToolStripButton2.Name = "ToolStripButton2"
@@ -276,6 +277,12 @@ Partial Class Form1
 		Me.ToolStripButton3.Size = New System.Drawing.Size(136, 22)
 		Me.ToolStripButton3.Text = "Calcular Automático"
 		'
+		'CalcularSinModificarPivotesToolStripMenuItem
+		'
+		Me.CalcularSinModificarPivotesToolStripMenuItem.Name = "CalcularSinModificarPivotesToolStripMenuItem"
+		Me.CalcularSinModificarPivotesToolStripMenuItem.Size = New System.Drawing.Size(230, 22)
+		Me.CalcularSinModificarPivotesToolStripMenuItem.Text = "Calcular sin modificar pivotes"
+		'
 		'Form1
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -328,4 +335,5 @@ Partial Class Form1
 	Friend WithEvents AgregarPuntosEnContornoToolStripMenuItem As ToolStripMenuItem
 	Friend WithEvents AgregarPuntosRandomToolStripMenuItem As ToolStripMenuItem
 	Friend WithEvents ToolStripButton3 As ToolStripButton
+	Friend WithEvents CalcularSinModificarPivotesToolStripMenuItem As ToolStripMenuItem
 End Class
