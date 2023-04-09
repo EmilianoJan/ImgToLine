@@ -12,10 +12,6 @@ Public Class Form1
 		End With
 	End Sub
 
-	Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click
-
-	End Sub
-
 	Private Sub ToolStripButton3_Click(sender As Object, e As EventArgs)
 		'genera los puntos
 		Dim obje As New ImageSingle(PictureBox1.Image)
@@ -65,11 +61,11 @@ Public Class Form1
 	End Sub
 
 	Private Sub ToolStripButton5_Click(sender As Object, e As EventArgs) Handles ToolStripButton5.Click
-		PictureBox3.Image.Save("Salida.png", Imaging.ImageFormat.Png)
-	End Sub
-
-	Private Sub ToolStripButton6_Click(sender As Object, e As EventArgs) Handles ToolStripButton6.Click
-
+		Dim fso As New SaveFileDialog
+		fso.Filter = "PNG *.png|*.png"
+		If fso.ShowDialog() = DialogResult.OK Then
+			PictureBox3.Image.Save(fso.FileName, Imaging.ImageFormat.Png)
+		End If
 	End Sub
 
 	Private Sub AgregarBordesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarBordesToolStripMenuItem.Click

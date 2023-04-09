@@ -233,8 +233,8 @@ Partial Class Form1
 		Me.ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), System.Drawing.Image)
 		Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
 		Me.ToolStripButton5.Name = "ToolStripButton5"
-		Me.ToolStripButton5.Size = New System.Drawing.Size(112, 22)
-		Me.ToolStripButton5.Text = "Guardar imagen"
+		Me.ToolStripButton5.Size = New System.Drawing.Size(138, 22)
+		Me.ToolStripButton5.Text = "Guardar imagen final"
 		'
 		'ToolStripButton6
 		'
